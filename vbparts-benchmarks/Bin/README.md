@@ -1,0 +1,1 @@
+Running __vbparts-benchmarks__ with a double-click will not work; please refer to the instructions in the parent folder's [README.md](../README.md).

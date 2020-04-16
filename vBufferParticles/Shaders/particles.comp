@@ -1,0 +1,72 @@
+#version 450
+
+
+/// Geometry generation for particles via Compute, for comp/comp generation mode.
+
+
+
+#include "particles.glsl"
+
+
+/// The packed vertex type as it is saved within the SSBO
+struct Vertex_Packed {
+	vec4 position_nX;	// xyz: position.xyz; w: normal.x (used as position.w)
+	vec4 nYZ_uv;	// x: normal.yz; zw: uv.xy
+};
+
+/// The Vertex type that will be seen by the vertex shader
+struct Vertex{
+	vec4 position;
+	vec2 uv;
+};
+
+
+// Position storage buffer (all vertex data saved to SSBO to be used as vertex buffer)
+layout(std430, set = 0, binding = 1) buffer Pos {
+   Vertex_Packed vertices [];
+};
+
+// Local workgroup size
+layout (local_size_x = 256, local_size_y = 1, local_size_z = 1) in;
+
+
+
+
+
+/// Packs a Vertex into the Vertex_Packed datatype, for use within the SSBO.
+Vertex_Packed packVertex(Vertex v){
+	Vertex_Packed vPacked;
+	vPacked.position_nX = v.position; // using normal.x as position.w
+	vPacked.nYZ_uv = vec4(0, 0, v.uv);
+	return vPacked;
+}
+
+// static UV multipliers for the 6 vertices of a quad
+const vec2 staticUVs[6] = {vec2(-1, -1), vec2(1, -1), vec2(1, 1), vec2(-1, -1), vec2(1, 1), vec2(-1, 1)};
+
+void main() {
+
+    // Current SSBO index
+    uint index = gl_GlobalInvocationID.x;
+	// Don't try to write beyond vertex count
+    if (index >= ubo.particleCount) // outside range of particles requested
+		return;
+
+	// Determine current particle index
+	uint pIndex = index;
+	vec4 p = particle(pIndex);
+	
+	vec4 particleCenter = ubo.view * vec4(p.xyz, 1); // to view
+
+	for(uint vIndex = 0; vIndex < VERTICES_PER_PARTICLE; ++vIndex){// index of the vertex within the particle
+		
+		// Fill vertex data
+		vec2 uv = staticUVs[vIndex]; // -1..1
+		Vertex vert;
+		vert.position = ubo.proj * (particleCenter + vec4(uv*p.w, 0, 0)); // p.w is the particle's half size.
+		vert.uv = uv * 0.5 + 0.5; // 0..1
+
+		// Write vertex
+		vertices[pIndex*VERTICES_PER_PARTICLE + vIndex] = packVertex(vert); // pack the return value as 2 float4s to save it within the SSBO
+	}
+}

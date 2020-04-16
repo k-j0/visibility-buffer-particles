@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{4502096f-e86e-4dd1-9f26-c37927c2d096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\GLSL includes">
+      <UniqueIdentifier>{55d06f53-f7ae-4f16-b478-322d4a590e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Vertex shaders">
+      <UniqueIdentifier>{4bd161da-f51f-44ca-81cd-50822bfd7f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Fragment shaders">
+      <UniqueIdentifier>{fc6e78e8-c76f-4f79-a848-8f143ae58ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Geometry shaders">
+      <UniqueIdentifier>{a27fb4ec-2db8-4f09-94e8-78bd0647250f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Compute shaders">
+      <UniqueIdentifier>{24c9104a-c33f-400c-bd3a-5f7886b5f452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\__Defines">
+      <UniqueIdentifier>{467a2bd6-dda5-4248-8d87-9afb8f266832}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\vkimpl\imgui_impl_glfw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\vkimpl\imgui_impl_vulkan.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsPipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Descriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanAppBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Swapchain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanDevices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIOverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputePipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ForwardRendererScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GBufferScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GBuffer6Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VBufferScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VulkanApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\vkimpl\imgui_impl_glfw.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\vkimpl\imgui_impl_vulkan.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferenceRotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsPipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Descriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VulkanAppBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UniformBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Swapchain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueFamilyIndices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VulkanDevices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GBufferScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ForwardRendererScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VBufferScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VBufferVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UberVMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIOverlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GBuffer6Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputePipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\lighting.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\raymarch.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\default_fwd.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\default.vert">
+      <Filter>Resource Files\Vertex shaders</Filter>
+    </None>
+    <None Include="Shaders\default_v.vert">
+      <Filter>Resource Files\Vertex shaders</Filter>
+    </None>
+    <None Include="Shaders\pp.vert">
+      <Filter>Resource Files\Vertex shaders</Filter>
+    </None>
+    <None Include="Shaders\raccoon_fwd.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\shrimp_fwd.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\default_v.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\pp_lighting_v.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\raymarch_fwd.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\raymarch_g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\default_g.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\raccoon_g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\shrimp_g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\pp_lighting_g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\shrimp_6g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\default_6g.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\raymarch_6g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\raccoon_6g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\pp_lighting_6g.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\particles_fwd.vert">
+      <Filter>Resource Files\Vertex shaders</Filter>
+    </None>
+    <None Include="Shaders\particles_fwd.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\particles.comp">
+      <Filter>Resource Files\Compute shaders</Filter>
+    </None>
+    <None Include="Shaders\random.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\particles.geom">
+      <Filter>Resource Files\Geometry shaders</Filter>
+    </None>
+    <None Include="Shaders\geom_particles_fwd.vert">
+      <Filter>Resource Files\Vertex shaders</Filter>
+    </None>
+    <None Include="Shaders\particles.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\quadexpand.geom">
+      <Filter>Resource Files\Geometry shaders</Filter>
+    </None>
+    <None Include="Shaders\vertgeom_particles_fwd.vert">
+      <Filter>Resource Files\Vertex shaders</Filter>
+    </None>
+    <None Include="Shaders\vert_particles_fwd.vert">
+      <Filter>Resource Files\Vertex shaders</Filter>
+    </None>
+    <None Include="Shaders\particles_g3.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\particles_g6.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\particles_v.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\particles_v.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\particles_frag.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+    <None Include="Shaders\comp_particles_fwd.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\comp_particles_g3.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\comp_particles_g6.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="__.defines">
+      <Filter>Resource Files\__Defines</Filter>
+    </None>
+    <None Include="Shaders\comp_particles_v.frag">
+      <Filter>Resource Files\Fragment shaders</Filter>
+    </None>
+    <None Include="Shaders\particles_v_frag_firstpass.glsl">
+      <Filter>Resource Files\GLSL includes</Filter>
+    </None>
+  </ItemGroup>
+</Project>

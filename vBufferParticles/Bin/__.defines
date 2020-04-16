@@ -1,0 +1,10 @@
+/// Included in particles_frag.glsl and a number of other GLSL source files/// This file is written to by C++ code at run-time to set compilation flags used in GLSL shader code/// to provide run-time modifications of shaders through #define (re-)definitions.#ifndef DEFINES_H // include guard#define DEFINES_H
+// complexity level for particles' fragments. 0 is least complex.
+#define PARTICLE_COMPLEXITY_0 //<- will apply compiler changes automatically at runtime
+
+// whether the particles should have transparency
+// MODE 1 is cutout transparency
+// MODE 0 is no transparency
+#define PARTICLE_CUTOUT_MODE_1 //<- will apply compiler changes automatically at runtime
+
+#endif
